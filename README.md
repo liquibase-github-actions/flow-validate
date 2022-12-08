@@ -1,12 +1,13 @@
 # Liquibase Flow Validate Action
 Official GitHub Action to run Liquibase Flow Validate in your GitHub Action Workflow. For more information on how flow validate works visit the [Official Liquibase Documentation](https://docs.liquibase.com/commands/home.html).
 ## Flow Validate
+[PRO]
 Validate a series of commands contained in one or more stages, as configured in a liquibase flow-file.
 ## Usage
 ```yaml
 steps:
 - uses: actions/checkout@v3
-- uses: liquibase-github-actions/flow-validate@v4.17.2
+- uses: liquibase-github-actions/flow-validate@v4.18.0
   with:
     # The path to the configuration yaml file which contains one or more "stages" of commands to be executed in a liquibase flow operation. Defaults to yaml file named "liquibase.flowfile.yaml" in the current working directory.
     # string
@@ -35,7 +36,7 @@ The liquibase flow validate action accepts all valid liquibase global options as
 ```yaml
 steps:
   - uses: actions/checkout@v3
-  - uses: liquibase-github-actions/flow-validate@v4.17.2
+  - uses: liquibase-github-actions/flow-validate@v4.18.0
     with:
       headless: true
       licenseKey: ${{ secrets.LIQUIBASE_LICENSE_KEY }}
