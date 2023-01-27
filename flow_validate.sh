@@ -255,4 +255,4 @@ if [[ -n "$USEPROCEDURESCHEMA" ]]; then
 	GLOBALS+=("--use-procedure-schema=$USEPROCEDURESCHEMA")
 fi
 
-docker-entrypoint.sh "${GLOBALS[@]}" pro flow validate "${PARAMS[@]}"
+docker-entrypoint.sh "${GLOBALS[@]}" flow validate "${PARAMS[@]}"
