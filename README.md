@@ -19,11 +19,6 @@ steps:
     # Optional
     flowFileStrictParsing: ""
 
-    # Name of the integration that is executing flow
-    # string
-    # Optional
-    flowIntegration: ""
-
 ```
 
 ### Secrets

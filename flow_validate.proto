@@ -18,8 +18,7 @@ message Flow {
   message ValidateRequest {
     optional string flow_file = 1; // The path to the configuration yaml file which contains one or more 'stages' of commands to be executed in a liquibase flow operation. Defaults to yaml file named "liquibase.flowfile.yaml" in the current working directory.
     optional bool flow_file_strict_parsing = 2; // Parse flow-file YAML to allow only Liquibase flow-file specific properties, indentations, and structure.
-    optional string flow_integration = 3; // Name of the integration that is executing flow
-    liquibase.GlobalOptions global_options = 4;
+    liquibase.GlobalOptions global_options = 3;
   }
 }
 
