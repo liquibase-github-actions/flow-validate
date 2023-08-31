@@ -19,6 +19,16 @@ steps:
     # Optional
     flowFileStrictParsing: ""
 
+    # The default interpreter used to execute shell commands.
+    # string
+    # Optional
+    flowShellInterpreter: ""
+
+    # Do not delete temporary files created by the shell command execution
+    # bool
+    # Optional
+    flowShellKeepTempFiles: ""
+
 ```
 
 ### Secrets
