@@ -7,7 +7,7 @@ Validate a series of commands contained in one or more stages, as configured in 
 ```yaml
 steps:
 - uses: actions/checkout@v3
-- uses: liquibase-github-actions/flow-validate@v4.23.1
+- uses: liquibase-github-actions/flow-validate@v4.23.2
   with:
     # The path to the configuration yaml file which contains one or more "stages" of commands to be executed in a liquibase flow operation. Defaults to yaml file named "liquibase.flowfile.yaml" in the current working directory.
     # string
@@ -41,7 +41,7 @@ The liquibase flow validate action accepts all valid liquibase global options as
 ```yaml
 steps:
   - uses: actions/checkout@v3
-  - uses: liquibase-github-actions/flow-validate@v4.23.1
+  - uses: liquibase-github-actions/flow-validate@v4.23.2
     with:
       headless: true
       licenseKey: ${{ secrets.LIQUIBASE_LICENSE_KEY }}
