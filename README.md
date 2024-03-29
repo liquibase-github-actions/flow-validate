@@ -1,8 +1,7 @@
 # Liquibase Flow Validate Action
 Official GitHub Action to run Liquibase Flow Validate in your GitHub Action Workflow. For more information on how flow validate works visit the [Official Liquibase Documentation](https://docs.liquibase.com/commands/home.html).
 ## Flow Validate
-[PRO]
-Validate a series of commands contained in one or more stages, as configured in a liquibase flow-file.
+[PRO] Validate a series of commands contained in one or more stages, as configured in a liquibase flow-file.
 ## Usage
 ```yaml
 steps:
